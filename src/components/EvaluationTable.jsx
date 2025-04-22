@@ -95,26 +95,15 @@ const getLevelColor = (level) => {
   }
 };
 
-export default function EvaluationTable() {
-  const [userEvaluation, setUserEvaluation] = useState(null);
+export default function EvaluationTable({ response }) {
   const [activeTab, setActiveTab] = useState("table");
 
-  useEffect(() => {
-    // In a real application, you would fetch this data from your API
-    try {
-      const parsedData = JSON.parse(mockUserEvaluation);
-      setUserEvaluation(parsedData);
-    } catch (error) {
-      console.error("Error parsing user evaluation data:", error);
-    }
-  }, []);
-
-  if (!userEvaluation) {
+  if (!response) {
     return <div className="p-4">Loading assessment data...</div>;
   }
 
   return (
-    <div className="container mx-auto py-6">
+    <div className="mx-12 py-6">
       <Card className="w-full">
         <CardHeader>
           <CardTitle className="text-2xl">Evaluación de Lectura</CardTitle>
@@ -143,7 +132,7 @@ export default function EvaluationTable() {
                   <tbody>
                     {criteriaData.map((criteria) => {
                       const categoryId = criteria.id;
-                      const evaluation = userEvaluation[categoryId];
+                      const evaluation = response[categoryId];
 
                       return (
                         <tr key={criteria.id}>
@@ -175,7 +164,7 @@ export default function EvaluationTable() {
               <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                 {criteriaData.map((criteria) => {
                   const categoryId = criteria.id;
-                  const evaluation = userEvaluation[categoryId];
+                  const evaluation = response[categoryId];
 
                   return (
                     <Card key={criteria.id} className="overflow-hidden">
