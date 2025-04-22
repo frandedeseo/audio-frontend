@@ -83,12 +83,16 @@ const criteriaData = [
 const getLevelColor = (level) => {
   switch (level) {
     case "Inicial":
+    case "inicial":
       return "bg-red-100 text-red-800 hover:bg-red-100";
     case "En proceso":
+    case "en proceso":
       return "bg-yellow-100 text-yellow-800 hover:bg-yellow-100";
     case "Logrado":
+    case "logrado":
       return "bg-green-100 text-green-800 hover:bg-green-100";
     case "Avanzado":
+    case "avanzado":
       return "bg-blue-100 text-blue-800 hover:bg-blue-100";
     default:
       return "bg-gray-100 text-gray-800 hover:bg-gray-100";
@@ -138,7 +142,7 @@ export default function EvaluationTable({ response }) {
                         <tr key={criteria.id}>
                           <td className="border p-2 font-medium">{criteria.name}</td>
                           {Object.entries(criteria.levels).map(([level, description]) => {
-                            const isCurrentLevel = evaluation.nivel === level;
+                            const isCurrentLevel = evaluation.nivel.toLowerCase() === level.toLowerCase();
                             return (
                               <td key={level} className={`border p-2 ${isCurrentLevel ? "bg-gray-100" : ""}`}>
                                 <div className="text-sm">{description}</div>
