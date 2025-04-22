@@ -88,9 +88,21 @@ const AudioUploadForm = ({ setEvaluationDisplayed, showNotification, setResponse
         method: "POST",
         body: formData,
       });
-      if (!response.ok) throw new Error("Failed to submit data");
-      setResponse(await response.json());
-      showNotification("Data submitted successfully!");
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error("Failed to submit data");
+      }
+
+      // Check if the backend returned a mismatch warning
+      if (data.error && data.error.includes("no coincide con el audio")) {
+        showNotification("El texto proporcionado no coincide con el audio", "error");
+        return; // Stop further execution
+      }
+
+      setResponse(data);
+      showNotification("¡Datos enviados correctamente!");
 
       if (audioUrl) URL.revokeObjectURL(audioUrl);
       setEvaluationDisplayed(true);
@@ -101,7 +113,7 @@ const AudioUploadForm = ({ setEvaluationDisplayed, showNotification, setResponse
       }, 2000);
     } catch (err) {
       console.log(err);
-      showNotification("Failed to submit data. Please try again.", "error");
+      showNotification("No se pudo enviar la información. Intenta de nuevo.", "error");
     } finally {
       setIsLoading(false);
     }
