@@ -4,17 +4,11 @@ import Notification from "@/components/Notification";
 import { useApiNotification } from "@/hooks/useApiNotification";
 import { useState, useRef } from "react";
 import { CSSTransition, SwitchTransition } from "react-transition-group";
-
-// Make sure your global or module CSS includes the .fade-* classes
-// with both opacity and transform rules for enter and exit states.
-// Example (in your external CSS file):
-// .fade-enter { opacity: 0; transform: translateY(10px); }
-// .fade-enter-active { opacity: 1; transform: translateY(0); transition: opacity 400ms ease-in-out, transform 400ms ease-in-out; }
-// .fade-exit { opacity: 1; transform: translateY(0); }
-// .fade-exit-active { opacity: 0; transform: translateY(-10px); transition: opacity 400ms ease-in-out, transform 400ms ease-in-out; }
+import { Button } from "@/components/ui/button";
+import { ArrowLeft } from "lucide-react";
 
 export default function Home() {
-  const [evaluationDisplayed, setEvaluationDisplayed] = useState(false);
+  const [evaluationDisplayed, setEvaluationDisplayed] = useState(true);
   const [response, setResponse] = useState(null);
   const nodeRef = useRef(null);
   const { notification, showNotification, hideNotification } = useApiNotification();
@@ -22,6 +16,18 @@ export default function Home() {
   return (
     <div className="container">
       <div className="header">
+        {evaluationDisplayed && (
+          <Button
+            style={{ zIndex: 50, cursor: "pointer" }}
+            className="left-[10px] absolute text-black"
+            variant="outline"
+            size="lg"
+            onClick={() => setEvaluationDisplayed(false)}
+          >
+            <ArrowLeft className=" h-4 w-4" />
+            Volver
+          </Button>
+        )}
         <h1>Analizador de fonética</h1>
         {!evaluationDisplayed && <p>Subí el audio del alumno leyendo y su respectivo texto que leyó</p>}
       </div>

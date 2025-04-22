@@ -103,12 +103,12 @@ export default function EvaluationTable({ response }) {
   const [activeTab, setActiveTab] = useState("table");
 
   if (!response) {
-    return <div className="p-4">Loading assessment data...</div>;
+    return <div className="p-4 h-[300px] items-center">Loading assessment data...</div>;
   }
 
   return (
     <div className="mx-12 py-6">
-      <Card className="w-full">
+      <Card className="w-full ">
         <CardHeader>
           <CardTitle className="text-2xl">Evaluación de Lectura</CardTitle>
           <CardDescription>Criterios de evaluación y resultados del estudiante</CardDescription>
