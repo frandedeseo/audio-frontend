@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 
 export default function Home() {
-  const [evaluationDisplayed, setEvaluationDisplayed] = useState(true);
+  const [evaluationDisplayed, setEvaluationDisplayed] = useState(false);
   const [response, setResponse] = useState(null);
   const nodeRef = useRef(null);
   const { notification, showNotification, hideNotification } = useApiNotification();
