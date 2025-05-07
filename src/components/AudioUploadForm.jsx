@@ -224,22 +224,20 @@ const AudioUploadForm = ({ setEvaluationDisplayed, showNotification, setResponse
               <option value="7to">7to grado</option>
             </select>
 
-            {selectedGrade && (
-              <div style={{ marginTop: "15px" }}>
-                <label className="form-label">Texto de lectura:</label>
-                <div
-                  className="textarea"
-                  style={{
-                    minHeight: "100px",
-                    backgroundColor: "#f9f9f9",
-                    cursor: "default",
-                    overflow: "auto",
-                  }}
-                >
-                  {getText()}
-                </div>
+            <div style={{ marginTop: "15px" }}>
+              <label className="form-label">Texto de lectura:</label>
+              <div
+                className="textarea"
+                style={{
+                  minHeight: "100px",
+                  backgroundColor: "#f9f9f9",
+                  cursor: "default",
+                  overflow: "auto",
+                }}
+              >
+                {getText()}
               </div>
-            )}
+            </div>
           </div>
 
           <div className="form-group flex-1">
