@@ -1,7 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import recommendations from "@/data/recommendation.json";
+import { mapRecommendations } from "@/utils/mapRecommendations";
 
 // This would come from your API in a real application
 const mockUserEvaluation = `{
@@ -99,8 +101,15 @@ const getLevelColor = (level) => {
   }
 };
 
-export default function EvaluationTable({ response }) {
+export default function EvaluationTable({ response, selectedGrade }) {
   const [activeTab, setActiveTab] = useState("table");
+
+  // once response or grado changes, build enriched data
+  const enriched = useMemo(() => {
+    if (!response) return null;
+    const evalResp = typeof response === "string" ? JSON.parse(response) : response;
+    return mapRecommendations(evalResp, recommendations, selectedGrade);
+  }, [response, selectedGrade]);
 
   if (!response) {
     return <div className="p-4 h-[300px] items-center">Loading assessment data...</div>;
@@ -131,12 +140,14 @@ export default function EvaluationTable({ response }) {
                       <th className="border p-2 bg-gray-50 text-left">Logrado</th>
                       <th className="border p-2 bg-gray-50 text-left">Avanzado</th>
                       <th className="border p-2 bg-gray-50 text-left">Evaluación</th>
+                      <th className="border p-2 bg-gray-50 text-left">Recomendación</th>
                     </tr>
                   </thead>
                   <tbody>
                     {criteriaData.map((criteria) => {
                       const categoryId = criteria.id;
                       const evaluation = response[categoryId];
+                      const extra = enriched[criteria.id];
 
                       return (
                         <tr key={criteria.id}>
@@ -156,6 +167,11 @@ export default function EvaluationTable({ response }) {
                               <p className="text-sm text-gray-700">{evaluation.comentario}</p>
                             </div>
                           </td>
+                          <td className="border p-2">
+                            <div className="flex flex-col gap-2">
+                              <p className="text-sm text-gray-700 mt-1">{extra.recomendacion}</p>
+                            </div>
+                          </td>
                         </tr>
                       );
                     })}
@@ -169,6 +185,7 @@ export default function EvaluationTable({ response }) {
                 {criteriaData.map((criteria) => {
                   const categoryId = criteria.id;
                   const evaluation = response[categoryId];
+                  const extra = enriched[criteria.id];
 
                   return (
                     <Card key={criteria.id} className="overflow-hidden">
@@ -181,6 +198,10 @@ export default function EvaluationTable({ response }) {
                           <div>
                             <h4 className="font-medium text-sm">Evaluación:</h4>
                             <p className="text-sm text-gray-700">{evaluation.comentario}</p>
+                          </div>
+                          <div>
+                            <h4 className="font-medium text-sm">Recomendación:</h4>
+                            <p className="text-sm text-gray-700">{extra.recomendacion}</p>
                           </div>
                           <div>
                             <h4 className="font-medium text-sm">Criterios:</h4>

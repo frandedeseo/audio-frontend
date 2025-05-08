@@ -9,6 +9,7 @@ import { ArrowLeft } from "lucide-react";
 
 export default function Home() {
   const [evaluationDisplayed, setEvaluationDisplayed] = useState(false);
+  const [selectedGrade, setSelectedGrade] = useState(null);
   const [response, setResponse] = useState(null);
   const nodeRef = useRef(null);
   const { notification, showNotification, hideNotification } = useApiNotification();
@@ -36,9 +37,15 @@ export default function Home() {
         <CSSTransition key={evaluationDisplayed ? "table" : "form"} nodeRef={nodeRef} timeout={400} classNames="fade" unmountOnExit>
           <div ref={nodeRef}>
             {evaluationDisplayed ? (
-              <EvaluationTable response={response} />
+              <EvaluationTable selectedGrade={selectedGrade} response={response} />
             ) : (
-              <AudioUploadForm setResponse={setResponse} setEvaluationDisplayed={setEvaluationDisplayed} showNotification={showNotification} />
+              <AudioUploadForm
+                selectedGrade={selectedGrade}
+                setSelectedGrade={setSelectedGrade}
+                setResponse={setResponse}
+                setEvaluationDisplayed={setEvaluationDisplayed}
+                showNotification={showNotification}
+              />
             )}
           </div>
         </CSSTransition>
