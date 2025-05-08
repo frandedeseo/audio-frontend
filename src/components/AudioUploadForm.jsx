@@ -111,7 +111,9 @@ const AudioUploadForm = ({ setEvaluationDisplayed, showNotification, setResponse
       formData.append("text", getText()); // Send the predefined text based on grade
       if (audioFile) formData.append("audio", audioFile);
 
-      const response = await fetch("https://audio-cleaner.vercel.app/evaluar-lectura", {
+      console.log("Backend URL:", process.env.REACT_APP_BACKEND_URL);
+
+      const response = await fetch(`https://audio-cleaner.onrender.com/evaluar-lectura`, {
         method: "POST",
         body: formData,
       });
