@@ -2,168 +2,168 @@
   "estrategia_silabica": {
     "Inicial": {
       "positiva": {
-        "grados": [1, 2],
-        "texto": "El alumno se encuentra en la etapa fonológica de lectura según lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez."
+        "grados": [1, 2, 3, 4, 5, 6, 7],
+        "texto": "Enseñarle la asociación de fonemas en sílabas mediante la estrategias silábica.Exagerar el alargar vocales."
       },
       "negativa": {
-        "grados": [3, 4, 5, 6, 7],
-        "texto": "El alumno se encuentra en la etapa fonológica de lectura lo cual es menor a lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez."
+        "grados": [],
+        "texto": ""
       }
     },
     "En proceso": {
       "positiva": {
-        "grados": [1, 2],
-        "texto": "El alumno se encuentra en la etapa fonológica de lectura según lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez."
+        "grados": [1, 2, 3, 4, 5, 6, 7],
+        "texto": "Reforzar la estrategia silábica de asociar fonemas para formar sílabas pero cortito, sin alargar."
       },
       "negativa": {
-        "grados": [3, 4, 5, 6, 7],
-        "texto": "El alumno se encuentra en la etapa fonológica de lectura lo cual es menor a lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez."
+        "grados": [],
+        "texto": ""
       }
     },
     "Logrado": {
       "positiva": {
-        "grados": [1, 2],
-        "texto": "El alumno se encuentra en la etapa fonológica de lectura según lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez."
+        "grados": [1, 2, 3, 4, 5, 6, 7],
+        "texto": "Pedirle que use la estrategia silábica para palabras difíciles."
       },
       "negativa": {
-        "grados": [3, 4, 5, 6, 7],
-        "texto": "El alumno se encuentra en la etapa fonológica de lectura lo cual es menor a lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez."
+        "grados": [],
+        "texto": ""
       }
     },
     "Avanzado": {
       "positiva": {
-        "grados": [1, 2],
-        "texto": "El alumno se encuentra en la etapa fonológica de lectura según lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez."
+        "grados": [1, 2, 3, 4, 5, 6, 7],
+        "texto": "No debiera necesitar reforzar la estrategia."
       },
       "negativa": {
-        "grados": [3, 4, 5, 6, 7],
-        "texto": "El alumno se encuentra en la etapa fonológica de lectura lo cual es menor a lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez."
+        "grados": [],
+        "texto": ""
       }
     }
   },
   "manejo_ritmo": {
     "Inicial": {
       "positiva": {
-        "grados": [1, 2],
-        "texto": "El alumno se encuentra en la etapa fonológica de lectura según lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez."
+        "grados": [1, 2, 3, 4, 5, 6, 7],
+        "texto": "Sugerirle que tome aire y lea por sílabas pero alargando una sílaba."
       },
       "negativa": {
-        "grados": [3, 4, 5, 6, 7],
-        "texto": "El alumno se encuentra en la etapa fonológica de lectura lo cual es menor a lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez."
+        "grados": [],
+        "texto": ""
       }
     },
     "En proceso": {
       "positiva": {
-        "grados": [1, 2],
-        "texto": "El alumno se encuentra en la etapa fonológica de lectura según lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez."
+        "grados": [1, 2, 3, 4, 5, 6, 7],
+        "texto": "Exagerar el alargado de palabras para darle entonación o bien, pedirle que lea en tono grueso o finito."
       },
       "negativa": {
-        "grados": [3, 4, 5, 6, 7],
-        "texto": "El alumno se encuentra en la etapa fonológica de lectura lo cual es menor a lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez."
+        "grados": [],
+        "texto": ""
       }
     },
     "Logrado": {
       "positiva": {
-        "grados": [1, 2],
-        "texto": "El alumno se encuentra en la etapa fonológica de lectura según lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez."
+        "grados": [1, 2, 3, 4, 5, 6, 7],
+        "texto": "Practicar entonar con distintos acentos de 'extranjero' o exagerando tonos."
       },
       "negativa": {
-        "grados": [3, 4, 5, 6, 7],
-        "texto": "El alumno se encuentra en la etapa fonológica de lectura lo cual es menor a lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez."
+        "grados": [],
+        "texto": ""
       }
     },
     "Avanzado": {
       "positiva": {
-        "grados": [1, 2],
-        "texto": "El alumno se encuentra en la etapa fonológica de lectura según lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez."
+        "grados": [1, 2, 3, 4, 5, 6, 7],
+        "texto": "Practicar leer textos teatrales."
       },
       "negativa": {
-        "grados": [3, 4, 5, 6, 7],
-        "texto": "El alumno se encuentra en la etapa fonológica de lectura lo cual es menor a lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez."
+        "grados": [],
+        "texto": ""
       }
     }
   },
   "manejo_respiracion": {
     "Inicial": {
       "positiva": {
-        "grados": [1, 2],
-        "texto": "El alumno se encuentra en la etapa fonológica de lectura según lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez."
+        "grados": [1, 2, 3, 4, 5, 6, 7],
+        "texto": "Pedirle que tome aire exageradamente antes de leer, y lo 'largue' en puntos y comas para luego volver a inhalar."
       },
       "negativa": {
-        "grados": [3, 4, 5, 6, 7],
-        "texto": "El alumno se encuentra en la etapa fonológica de lectura lo cual es menor a lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez."
+        "grados": [],
+        "texto": ""
       }
     },
     "En proceso": {
       "positiva": {
-        "grados": [1, 2],
-        "texto": "El alumno se encuentra en la etapa fonológica de lectura según lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez."
+        "grados": [1, 2, 3, 4, 5, 6, 7],
+        "texto": "Reforzar el respirar en puntos y comas."
       },
       "negativa": {
-        "grados": [3, 4, 5, 6, 7],
-        "texto": "El alumno se encuentra en la etapa fonológica de lectura lo cual es menor a lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez."
+        "grados": [],
+        "texto": ""
       }
     },
     "Logrado": {
       "positiva": {
-        "grados": [1, 2],
-        "texto": "El alumno se encuentra en la etapa fonológica de lectura según lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez."
+        "grados": [1, 2, 3, 4, 5, 6, 7],
+        "texto": "Practicar respirar en distintos momentos: cada 3 palabras, cada 5, antes de una palabra corta."
       },
       "negativa": {
-        "grados": [3, 4, 5, 6, 7],
-        "texto": "El alumno se encuentra en la etapa fonológica de lectura lo cual es menor a lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez."
+        "grados": [],
+        "texto": ""
       }
     },
     "Avanzado": {
       "positiva": {
-        "grados": [1, 2],
-        "texto": "El alumno se encuentra en la etapa fonológica de lectura según lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez."
+        "grados": [1, 2, 3, 4, 5, 6, 7],
+        "texto": "Practicar leer susurrando."
       },
       "negativa": {
-        "grados": [3, 4, 5, 6, 7],
-        "texto": "El alumno se encuentra en la etapa fonológica de lectura lo cual es menor a lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez."
+        "grados": [],
+        "texto": ""
       }
     }
   },
   "precision": {
     "Inicial": {
       "positiva": {
-        "grados": [1, 2],
-        "texto": "El alumno se encuentra en la etapa fonológica de lectura según lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez."
+        "grados": [1, 2, 3, 4, 5, 6, 7],
+        "texto": "Trabajar oralmente el deletreo y descomposición de palabras por el nombre de la letra."
       },
       "negativa": {
-        "grados": [3, 4, 5, 6, 7],
-        "texto": "El alumno se encuentra en la etapa fonológica de lectura lo cual es menor a lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez."
+        "grados": [],
+        "texto": ""
       }
     },
     "En proceso": {
       "positiva": {
         "grados": [1, 2],
-        "texto": "El alumno se encuentra en la etapa fonológica de lectura según lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez."
+        "texto": ""
       },
       "negativa": {
         "grados": [3, 4, 5, 6, 7],
-        "texto": "El alumno se encuentra en la etapa fonológica de lectura lo cual es menor a lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez."
+        "texto": ""
       }
     },
     "Logrado": {
       "positiva": {
-        "grados": [1, 2],
-        "texto": "El alumno se encuentra en la etapa fonológica de lectura según lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez."
+        "grados": [1, 2, 3, 4, 5, 6, 7],
+        "texto": "Animarlo a leer haciendo pequeños golpecitos imperceptibles con el dedo, para silabear palabras largas o difíciles."
       },
       "negativa": {
-        "grados": [3, 4, 5, 6, 7],
-        "texto": "El alumno se encuentra en la etapa fonológica de lectura lo cual es menor a lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez."
+        "grados": [],
+        "texto": ""
       }
     },
     "Avanzado": {
       "positiva": {
-        "grados": [1, 2],
-        "texto": "El alumno se encuentra en la etapa fonológica de lectura según lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez."
+        "grados": [1, 2, 3, 4, 5, 6, 7],
+        "texto": "Felicitarlo por su lectura precisa."
       },
       "negativa": {
-        "grados": [3, 4, 5, 6, 7],
-        "texto": "El alumno se encuentra en la etapa fonológica de lectura lo cual es menor a lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez."
+        "grados": [],
+        "texto": ""
       }
     }
   },
@@ -171,40 +171,40 @@
     "Inicial": {
       "positiva": {
         "grados": [1, 2],
-        "texto": "El alumno se encuentra en la etapa fonológica de lectura según lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez."
+        "texto": "El alumno se encuentra en la etapa fonológica de lectura según lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez. Alargar una sílaba cada tanto puede ayudarle a ganar agilidad."
       },
       "negativa": {
         "grados": [3, 4, 5, 6, 7],
-        "texto": "El alumno se encuentra en la etapa fonológica de lectura lo cual es menor a lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez."
+        "texto": "El alumno se encuentra en la etapa fonológica de lectura lo cual es menor a lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez. Respirar en puntos y comas, separar en sílabas palabras difíciles y alargar una palabra cada tanto, son estrategias eficaces."
       }
     },
     "En proceso": {
       "positiva": {
-        "grados": [1, 2],
-        "texto": "El alumno se encuentra en la etapa fonológica de lectura según lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez."
+        "grados": [1, 2, 3],
+        "texto": "El alumno se encuentra en la etapa ortográfica de lectura según lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez.  Alargar una sílaba cada tanto, enfatizar el respirar antes de una palabra corta y jugar a levantar la vista para ver si pudo 'ver' las palabras que siguen, son buenas estrategias para agilizar la lectura."
       },
       "negativa": {
-        "grados": [3, 4, 5, 6, 7],
-        "texto": "El alumno se encuentra en la etapa fonológica de lectura lo cual es menor a lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez."
+        "grados": [4, 5, 6, 7],
+        "texto": "El alumno se encuentra en la etapa ortográfica de lectura, lo cual se encuentra por debajo de lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez. Alargar una sílaba cada tanto, enfatizar el respirar antes de una palabra corta y jugar a levantar la vista para ver si pudo 'ver' las palabras que siguen, son buenas estrategias para agilizar la lectura."
       }
     },
     "Logrado": {
       "positiva": {
-        "grados": [1, 2],
-        "texto": "El alumno se encuentra en la etapa fonológica de lectura según lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez."
+        "grados": [1, 2, 3, 4],
+        "texto": "El alumno se encuentra en la etapa ortográfica de lectura avanzando hacia la lectura expresiva, según lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez.  Enfatizar el respirar antes de una palabra corta, o guardarse una palabra si hay cambio de renglón o cambiar el tono de voz,  son buenas estrategias para agilizar la lectura."
       },
       "negativa": {
-        "grados": [3, 4, 5, 6, 7],
-        "texto": "El alumno se encuentra en la etapa fonológica de lectura lo cual es menor a lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez."
+        "grados": [5, 6, 7],
+        "texto": "El alumno se encuentra en la etapa ortográfica de lectura avanzando hacia la lectura expresiva, pero ello es menor a lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez.  Enfatizar el respirar antes de una palabra corta, o guardarse una palabra si hay cambio de renglón o cambiar el tono de voz,  son buenas estrategias para agilizar la lectura."
       }
     },
     "Avanzado": {
       "positiva": {
-        "grados": [1, 2],
-        "texto": "El alumno se encuentra en la etapa fonológica de lectura según lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez."
+        "grados": [1, 2, 3, 4, 5, 6, 7],
+        "texto": "El alumno se encuentra en la etapa expresiva. Logra leer con fluidez y expresividad según lo esperado para su grado escolar. Igualmente podría leer textos teatrales o intentar leer para otros."
       },
       "negativa": {
-        "grados": [3, 4, 5, 6, 7],
+        "grados": [],
         "texto": "El alumno se encuentra en la etapa fonológica de lectura lo cual es menor a lo esperado para su grado escolar. Debe practicar lectura en voz alta para ganar una mayor fluidez."
       }
     }
