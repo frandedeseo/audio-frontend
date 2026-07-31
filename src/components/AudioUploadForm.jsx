@@ -16,7 +16,7 @@ const AudioUploadForm = ({ selectedGrade, setSelectedGrade, setEvaluationDisplay
 
   // Predefined texts for each grade
   const gradeTexts = {
-    1: "Los perros tienen muy buen olfato y oído. El perro es un animal fiel. Es el mejor amigo del hombre.",
+    1: "Los perros tienen muy buen olfato y oído. Es un animal inteligente y fiel. Es el mejor amigo del hombre.",
     2: "En el sistema solar hay ocho planetas. Marte es el cuarto planeta más cercano al sol. Es el segundo más pequeño. Su color es rojizo. Desde la Tierra se lo puede observar con un telescopio. Hace varios años los científicos investigan si hubo vida en ese planeta.",
     3: "Los dinosaurios son animales que vivieron en la tierra hace muchos años. Eran animales salvajes, muy feroces y peligrosos. El Tiranosaurio Rex era uno de los dinosaurios más conocidos. Era un animal de gran tamaño. Tenía dientes muy filosos y grandes garras para atrapar a sus presas.",
     4: "El búho es un ave de comportamiento nocturno. Por lo tanto, al haber escasez de luz, intercepta a sus presas a través del sonido. Es famoso y conocido por permanecer despierto durante la noche y descansar de día. A diferencia de las lechuzas, los búhos poseen plumas sobre su cabeza que son confundidas con orejas. La lechuza no posee estas plumas.",
