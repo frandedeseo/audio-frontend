@@ -2,6 +2,9 @@
   "name": "audio-frontend",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=20.9.0"
+  },
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
@@ -14,7 +17,7 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.501.0",
-    "next": "15.3.0",
+    "next": "16.2.12",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-transition-group": "^4.4.5",
@@ -28,7 +31,7 @@
     "@tailwindcss/postcss": "^4",
     "autoprefixer": "^10.4.21",
     "eslint": "^9",
-    "eslint-config-next": "15.3.0",
+    "eslint-config-next": "16.2.12",
     "postcss": "^8.5.3",
     "tailwindcss": "^4.1.4"
   }
