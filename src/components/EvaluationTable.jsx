@@ -107,13 +107,17 @@ export default function EvaluationTable({ response, selectedGrade }) {
   // once response or grado changes, build enriched data
   const enriched = useMemo(() => {
     if (!response) return null;
-    const evalResp = typeof response === "string" ? JSON.parse(response) : response;
+    const parsedResponse = typeof response === "string" ? JSON.parse(response) : response;
+    const evalResp = parsedResponse.evaluacion ?? parsedResponse;
     return mapRecommendations(evalResp, recommendations, selectedGrade);
   }, [response, selectedGrade]);
 
   if (!response) {
     return <div className="p-4 h-[300px] items-center">Loading assessment data...</div>;
   }
+
+  const parsedResponse = typeof response === "string" ? JSON.parse(response) : response;
+  const evaluationResponse = parsedResponse.evaluacion ?? parsedResponse;
 
   return (
     <div className="mx-12 py-6">
@@ -146,8 +150,8 @@ export default function EvaluationTable({ response, selectedGrade }) {
                   <tbody>
                     {criteriaData.map((criteria) => {
                       const categoryId = criteria.id;
-                      const evaluation = response[categoryId];
-                      const extra = enriched[criteria.id];
+                      const evaluation = evaluationResponse[categoryId] ?? { nivel: "-", comentario: "" };
+                      const extra = enriched?.[criteria.id] ?? { recomendacion: "" };
 
                       return (
                         <tr key={criteria.id}>
@@ -184,8 +188,8 @@ export default function EvaluationTable({ response, selectedGrade }) {
               <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                 {criteriaData.map((criteria) => {
                   const categoryId = criteria.id;
-                  const evaluation = response[categoryId];
-                  const extra = enriched[criteria.id];
+                  const evaluation = evaluationResponse[categoryId] ?? { nivel: "-", comentario: "" };
+                  const extra = enriched?.[criteria.id] ?? { recomendacion: "" };
 
                   return (
                     <Card key={criteria.id} className="overflow-hidden">

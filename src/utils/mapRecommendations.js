@@ -22,8 +22,10 @@ const KEY_MAP = {
  * }
  */
 export function mapRecommendations(evalResp, recommendations, grado) {
-  return Object.entries(evalResp).reduce((acc, [critKey, { nivel, comentario }]) => {
+  return Object.entries(evalResp ?? {}).reduce((acc, [critKey, evaluation]) => {
+    const { nivel = "-", comentario = "" } = evaluation ?? {};
     const recKey = KEY_MAP[critKey];
+    if (!recKey) return acc;
     const levelBlock = recommendations[recKey] && recommendations[recKey][nivel];
     if (!levelBlock) {
       console.warn(`No recommendation for ${recKey} @ ${nivel}`);
@@ -32,7 +34,7 @@ export function mapRecommendations(evalResp, recommendations, grado) {
     }
 
     // pick positiva vs negativa
-    const isPositiva = levelBlock.positiva.grados.includes(grado);
+    const isPositiva = levelBlock.positiva.grados.includes(Number(grado));
     const recomendacion = isPositiva ? levelBlock.positiva.texto : levelBlock.negativa.texto;
 
     acc[critKey] = { nivel, comentario, recomendacion };
