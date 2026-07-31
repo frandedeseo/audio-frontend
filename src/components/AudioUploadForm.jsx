@@ -86,6 +86,7 @@ const AudioUploadForm = ({ selectedGrade, setSelectedGrade, setEvaluationDisplay
       const formData = new FormData();
       formData.append("text", getText());
       formData.append("audio", audioFile);
+      formData.append("model", "gemini-3.5-flash");
       const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/evaluar-lectura`, {
         method: "POST",
         body: formData,
